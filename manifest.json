@@ -1,0 +1,18 @@
+{  
+  "name": "LingJB",  
+  "version": "0.9.0",  
+  "description": "淘宝领金币",  
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+        "matches": ["*://*.taobao.com/*","*://*.tmall.com/*","*://*.enjoyapps.org/miaotest.htm*"],
+        "js": ["js/jquery-1.8.3.min.js", "main.js"],
+        "run_at":"document_end"
+    }
+  ],
+  "browser_action": {  
+    "default_icon": "icon.png" ,
+    "default_title": "LingJB",
+    "default_popup": "popup.html"
+  }  
+} 
